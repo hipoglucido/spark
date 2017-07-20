@@ -80,7 +80,7 @@ object BinaryClassificationMetricsExample {
 
     val beta = 0.5
     val fScore = metrics.fMeasureByThreshold(beta)
-    f1Score.foreach { case (t, f) =>
+    fScore.foreach { case (t, f) =>
       println(s"Threshold: $t, F-score: $f, Beta = 0.5")
     }
 
